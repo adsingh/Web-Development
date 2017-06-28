@@ -1,0 +1,8 @@
+body{
+	background: orange;
+}
+/*Border has WIDTH, STYLE AND COLOR */
+h1{
+	color:#3bd394;	
+	border: 3px solid black;
+}

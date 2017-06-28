@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Demo</title>
+</head>
+<body>
+
+	<h1>Register</h1>
+
+	<!-- action - where the form sends data to
+	     method - what http methos (get/post) 
+	 	Form is a block element -->
+	<form>
+
+		<label for="first_name">First Name:</label>
+		<input id="first_name" type="text" placeholder="John" required>
+		<label for="last_name">Last Name: </label>
+		<input id="last_name" type="text" placeholder="Smith" required>
+		<br>
+
+		<label for="male">Male</label>
+		<input id="male" type="radio" name="gender" value="male">
+		<label for="female">Female</label>
+		<input id="female" type="radio" name="gender" value="female">
+		<label for="other">Other</label>
+		<input id="other" type="radio" name="gender" value="other">
+		<br>
+
+		<label for="email">Email:</label>
+		<input id="email" type="email" placeholder="your email" required>
+		<label for="password">Password: </label>
+		<input id="password" type="text" placeholder="your password" pattern=.{5,10} required>
+		<br>
+
+		<label for="birthday">Birthday:</label>
+		<select id="birthday" name="month">
+    		<option selected disabled>Month</option>
+    		<option>Jan</option>
+    		<option>Feb</option>
+    		<option>Mar</option>
+    		<option>Apr</option>
+    		<option>May</option>
+    		<option>Jun</option>
+    		<option>Jul</option>
+    		<option>Aug</option>
+    		<option>Sep</option>
+    		<option>Oct</option>
+    		<option>Nov</option>
+    		<option>Dec</option>
+		</select>	
+
+		<select name="day">
+			<option selected disabled>Day</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+		</select>
+
+		<select name="year">
+			<option selected disabled>Year</option>
+			<option>1994</option>
+			<option>1995</option>
+		</select>
+		<br>
+		<label>I agree to the terms and conditions <input type="checkbox"></label>
+		<br>
+		<input type="submit">
+	</form>
+
+
+
+
+</body>
+</html>
